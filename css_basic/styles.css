@@ -13,10 +13,14 @@ main {
 
 article {
     flex:2;
+    background-color: aqua;
 }
 
 aside {
     flex:1;
+    color:brown;
+    background-color: bisque;
+    border: 1px;
 }
 
 article, aside {
