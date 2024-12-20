@@ -1,0 +1,24 @@
+body, main {
+    display:flex; /* since we're applying flexbox properties to content inside body and main, they must be told that they're containers for flexible boxes*/
+}
+
+body {
+    flex-direction:column;
+}
+
+main {
+    flex-direction:row; /* since there're 2 boxes, they must be stacked horizontally(like column 1, column 2.....*/
+    flex:auto;
+}
+
+article {
+    flex:2;
+}
+
+aside {
+    flex:1;
+}
+
+article, aside {
+    overflow-y: auto;
+}
