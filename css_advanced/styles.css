@@ -1,3 +1,14 @@
 body {
-    background-color: rgb(74, 72, 72);
+    margin:0; /* take the white sides off use all the viewport width and height */
+}
+
+#smile_logo {
+    padding-left:120px; /* recommended to use padding for spacing */
+    padding-top:30px; /* margin is best for spacing and separating neigboring elements*/
+}
+
+header, #par {
+    background-color: grey;
+    background-image: url(girl_smilin.png);
+    background-repeat: no-repeat;
 }
