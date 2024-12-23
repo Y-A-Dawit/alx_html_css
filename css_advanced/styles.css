@@ -11,18 +11,15 @@
 
 .ulli li {
     display:inline-flex;
-    padding-right: 30px; /* relative to the unordered list container, not the navigation container */
+    padding-right: 30px; /* relative to the unordered list container, not the navigation container
+    it sets the distance between the neighboring lists */
 }
 
-.ulli li {
-    color:red !important;
+.ulli li a{
+    color:white;
+    text-decoration-line:none;
+    font-family:source
 }
-
-/* .smile_logo { */
-    /* padding-left:150px; recommended to use padding for spacing */
-    /* padding-top:40px; margin is best for spacing and separating neigboring elements  */
-/* } */
-
 
 header, #par {
     background-color: grey;
