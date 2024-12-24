@@ -1,24 +1,32 @@
 * {
-    margin:0; /* take the white sides off use all the viewport width and height */
+    margin:0; /* take the white sides off to use all the viewport width and height */
     padding:0;
     box-sizing:border-box;
 }
 
-.navig {
-    display:flex;
-    justify-content: space-between;
+@font-face { /* allows to define custom font, and import it later*/
+    font-family: "MyCustomFont";
+    src: url(SourceSansPro-Bold.otf)
 }
 
-.ulli li {
-    display:inline-flex;
-    padding-right: 30px; /* relative to the unordered list container, not the navigation container
-    it sets the distance between the neighboring lists */
+@font-face {
+    font-family: "Font3";
+    src: url(SourceSansPro-Light.otf)
 }
 
-.ulli li a{
-    color:white;
-    text-decoration-line:none;
-    font-family:source
+@font-face {
+    font-family: "MyCustomFonts";
+    src: url(SourceSansPro-Semibold.otf)
+}
+
+@font-face {
+    font-family: "Font1", sans-serif;
+    src: url(SourceSansPro-Black.otf);
+}
+
+@font-face {
+    font-family: "Font2", sans-serif;
+    src: url(SourceSansPro-It.otf);
 }
 
 header, #par {
@@ -28,4 +36,119 @@ header, #par {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.navig {
+    display:flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.ulli li {
+    display:inline-flex;
+    padding-right: 45px; /* relative to the unordered list container, not the navigation container
+    it sets the distance between the neighboring lists */
+}
+
+.ulli li a{ /* came all the way upto "a" tag, cause "a" tag has its own defualt styles applied by the browser which usually override styles inherited from the parent "li" tag in this case.*/
+    color:white;
+    text-decoration-line:none;
+    font-family: "MyCustomFont", Sans-serif; /* sans-serif is a fall back value here, if the browser doesn't support the imported font family*/
+    font-size: 12px;
+}
+
+.first_main_main {
+    font-family: "MyCustomFont", sans-serif;
+    font-size:120px;
+}
+
+.first_main_child {
+    font-family: "MyCustomFont", sans-serif;
+    padding-right:45px;
+    font-size:16px;
+}
+
+
+.first_main_register {
+    font-family: "MyCustomFonts", sans-serif;
+    font-size: 14px;
+    background-color: #C271FF;
+    color:white;
+    margin-top: 40px;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:25px;
+    padding-right:25px;
+    border: 0;
+    border-radius: 30px;
+    box-shadow:0 0 20px 0.5px rgb(0,0,0,0.45); /* horizontal offset, vertical offset, blur radius, spread radius, blur-color */
+}
+
+#par {
+    position: relative; /* element positioned relative to its normal position initially in the document */
+    height: 100vh;
+    width: 100vw;
+}
+
+.first_main { /* unlike the "a" tag previously "h1", "button" and "span" tag don't override their parent's style. No need to mention the child elements here */
+    position:absolute; /* positions the div element in relation to the section element. Used for precise positioning, for placing element in a specific spot on the page,
+    element removed from the normal document flow and positioned relative to the nearest positioned ancestor(with position:relative/absolute/fixed)*/
+
+    top:20%; /* only places the content area's top corner/edge at 10% of the viewport's height, not the text/element itself */
+
+    left:50%;/* only places the content area's left corner/edge at 50& of the viewport's width, not the text/element itself */
+
+    transform: translate(-50%, -50%);/* moves the element back by 50% of its own width and height relative to the main and cross-axis of the ancestor's viewport */
+    text-align:center;
+    color:white;
+}
+
+.pros {
+    position: absolute;
+    top:50%;
+    width:100vw;
+    text-align:center;
+}
+
+.real_pros {
+    display:flex;
+    padding-top:65px;
+    justify-content:space-evenly;
+}
+
+div.pros h2 {
+    font-size:32px;
+    font-family: "Font3", sans-serif;
+}
+
+div.pros h2 strong {
+    font-size:32px;
+    font-family: "MyCustomFont", sans-serif;
+}
+
+.real_pros h3 {
+    font-family: "Font1", sans-serif;
+    font-size:18px;
+}
+
+.real_pros p {
+    font-family: "Font2", sans-serif;
+    font-size:16px;
+    color: #ffffff;
+}
+
+#par2 {
+    background-color:#C271FF;
+    height:auto;
+    padding:80px;
+}
+
+#par2 {
+    display:flex;
+    flex-direction:row;
+    padding-left: 20px;
+}
+
+.par_child {
+    margin:35px;
 }
