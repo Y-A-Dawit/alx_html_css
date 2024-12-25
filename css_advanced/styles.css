@@ -1,7 +1,10 @@
 * {
     margin:0; /* take the white sides off to use all the viewport width and height */
     padding:0;
+    border:0;
     box-sizing:border-box;
+    overflow-x:hidden;
+    scroll-behavior: unset;
 }
 
 @font-face { /* allows to define custom font, and import it later*/
@@ -14,6 +17,10 @@
     src: url(SourceSansPro-Light.otf)
 }
 
+@font-face {
+    font-family: "Font4";
+    src: url(SourceSansPro-Regular.otf)
+}
 @font-face {
     font-family: "MyCustomFonts";
     src: url(SourceSansPro-Semibold.otf)
@@ -29,31 +36,33 @@
     src: url(SourceSansPro-It.otf);
 }
 
-header, #par {
-    background-color: grey;
+.background {
     background-image: url(girl_smilin.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
-.navig {
-    display:flex;
-    justify-content: space-between;
+header, .navig { /* need to use both "header" element selector and ".navig" class selector to span the full width of the viewport, otherwise*/
+    display: flex;
+    height: 100vh;
     width: 100vw;
+    align-items:start;
+    justify-content:space-between;
 }
 
 .ulli li {
-    display:inline-flex;
+    display:inline-flex; /* distributes content/items horizontally by default */
     padding-right: 45px; /* relative to the unordered list container, not the navigation container
     it sets the distance between the neighboring lists */
+    flex-direction:row; /* this one isn't that much needed, since display:inline-flex automatically places items in a horizontal manner, without behaving like a block in another row */
 }
 
 .ulli li a{ /* came all the way upto "a" tag, cause "a" tag has its own defualt styles applied by the browser which usually override styles inherited from the parent "li" tag in this case.*/
     color:white;
     text-decoration-line:none;
-    font-family: "MyCustomFont", Sans-serif; /* sans-serif is a fall back value here, if the browser doesn't support the imported font family*/
+    font-family: "MyCustomFont", sans-serif; /* sans-serif is a fall back value here, if the browser doesn't support the imported font family*/
     font-size: 12px;
 }
 
@@ -84,17 +93,18 @@ header, #par {
     box-shadow:0 0 20px 0.5px rgb(0,0,0,0.45); /* horizontal offset, vertical offset, blur radius, spread radius, blur-color */
 }
 
-#par {
+.first-section background {
     position: relative; /* element positioned relative to its normal position initially in the document */
     height: 100vh;
     width: 100vw;
+    background-size: cover;
 }
 
 .first_main { /* unlike the "a" tag previously "h1", "button" and "span" tag don't override their parent's style. No need to mention the child elements here */
     position:absolute; /* positions the div element in relation to the section element. Used for precise positioning, for placing element in a specific spot on the page,
     element removed from the normal document flow and positioned relative to the nearest positioned ancestor(with position:relative/absolute/fixed)*/
 
-    top:20%; /* only places the content area's top corner/edge at 10% of the viewport's height, not the text/element itself */
+    top:35%; /* only places the content area's top corner/edge at 10% of the viewport's height, not the text/element itself */
 
     left:50%;/* only places the content area's left corner/edge at 50& of the viewport's width, not the text/element itself */
 
@@ -105,7 +115,7 @@ header, #par {
 
 .pros {
     position: absolute;
-    top:50%;
+    top:65%;
     width:100vw;
     text-align:center;
 }
@@ -138,17 +148,46 @@ div.pros h2 strong {
 }
 
 #par2 {
-    background-color:#C271FF;
-    height:auto;
-    padding:80px;
-}
-
-#par2 {
     display:flex;
-    flex-direction:row;
-    padding-left: 20px;
+    height:auto;
+    width:100%;
+    align-items:center;
+    background-color:#C271FF;
+    padding:100px;
 }
 
 .par_child {
-    margin:35px;
+    height:auto;
+    margin-left:240px;
+    padding:15px;
+    border: 0px;
+    display:flex;
+}
+
+.par_child_child {
+    padding:10px;
+    margin:20px 20px 20px 20px; /* top, right, bottom, left */
+    display:flex;
+    flex-direction:column;
+    color: #ffffff;
+    border: 0;
+    flex:1;
+}
+
+.par_child_child div{
+    display:flex;
+    flex-direction:column;
+    margin:20px;    
+}
+
+.par_child_child blockquote {
+    font-family: "Font4", sans-serif;
+}
+
+.par_child_child h3 {
+    font-family: "MyCustomFont";
+}
+
+.par_child_child p {
+    font-family: "Font2";
 }
