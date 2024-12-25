@@ -191,3 +191,26 @@ div.pros h2 strong {
 .par_child_child p {
     font-family: "Font2";
 }
+
+.par3 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:65px;
+}
+
+.par3 h2 {
+    margin-top: 25px;
+    font-family: "Font3", sans-serif;
+    font-size: 32px;
+    margin-bottom: 65px;
+}
+
+.par3_child_child {
+    display:flex;
+    justify-content: ;
+    padding:15px;
+    margin:15px;
+    gap:55px;
+    max-width:100%;
+}
