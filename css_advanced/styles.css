@@ -39,7 +39,7 @@
 .background {
     background-image: url(girl_smilin.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /* makes the background image cover the entire width(port)*/
     background-position: center;
     background-attachment: scroll;
     width:auto;
