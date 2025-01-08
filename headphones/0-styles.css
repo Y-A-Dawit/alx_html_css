@@ -6,3 +6,13 @@
     overflow-x:hidden;
     scroll-behavior: unset;
 }
+
+.background {
+    background-image: url(headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    width:auto;
+    height:auto;
+}
