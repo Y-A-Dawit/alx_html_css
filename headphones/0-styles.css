@@ -16,3 +16,13 @@
     width:auto;
     height:auto;
 }
+
+.background2 {
+    background-image: url(headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    width:auto;
+    height:auto;
+}
