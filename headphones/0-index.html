@@ -9,7 +9,7 @@
 <body>
     <header class="background">
         <nav>
-            <div><img src="images/logo_headphones.png" alt=""></div>
+            <div><img src="./images/logo_headphones.png" alt=""></div>
             <div>
                 <ul>
                     <li>what we do</li>
@@ -43,22 +43,22 @@
         <section>
             <div>
                 <div>
-                    <div><img src="images/voice_record.png" alt=""></div>
+                    <div><img src="./images/voice_record.png" alt=""></div>
                     <div><p>Lorem ipsum</p></div>
                     <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
                 </div>
                 <div>
-                    <div><img src="images/video_icon.png" alt=""></div>
+                    <div><img src="./images/video_icon.png" alt=""></div>
                     <div><p>Lorem ipsum</p></div>
                     <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
                 </div>
                 <div>
-                    <div><img src="images/music_icon.png" alt=""></div>
+                    <div><img src="./images/music_icon.png" alt=""></div>
                     <div><p>Lorem ipsum</p></div>
                     <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
                 </div>
                 <div>
-                    <div><img src="images/ear_icon.png" alt=""></div>
+                    <div><img src="./images/ear_icon.png" alt=""></div>
                     <div><p>Lorem ipsum</p></div>
                     <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
                 </div>
@@ -69,33 +69,37 @@
                 <div><h2>Our results speak for themselves</h2></div>
                 <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
                 <div>
-                    <div><img src="images/pentagone.png" alt=""></div>
-                    <div><img src="images/pentagone.png" alt=""></div>
-                    <div><img src="images/pentagone.png" alt=""></div>
-                    <div><img src="images/pentagone.png" alt=""></div>
+                    <div><img src="./images/pentagone.png" alt=""></div>
+                    <div><img src="./images/pentagone.png" alt=""></div>
+                    <div><img src="./images/pentagone.png" alt=""></div>
+                    <div><img src="./images/pentagone.png" alt=""></div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="main_form">
             <form action="/submit" method="POST">
-                <input type="text" placeholder="Name" name="name" required>
-                
-                <input type="email" placeholder="Email" name="email" required>
-                
-                <input type="text" placeholder="Your message" name="message">
+                <div>
+                    <h2 style="font-weight: 800;">Contact us</h2>
+                </div>
+
+                <div class="data_form">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="text" placeholder="Your message" name="message">
+                </div>
                 <button type="button">CALL TO ACTION</button>
-              </form>
+            </form>
               
         </section>
     </main>
-    <footer>
+    <footer class="foot">
         <section>
-            <div><img src="images/logo_headphones.png" alt=""></div>
-            <div><p>&copy;headphones 2020</p></div>
-            <div>
-                <i><img src='36.png' alt='facebook logo'></i>
-                <i><img src="twitter.png" alt="twitter logo"></i>
-                <i><img src="instagram.png" alt="instagram logo"></i>
+            <div><img style="width:180px; height:auto;" src="./images/logo_headphones.png" alt=""></div>
+            <div class='copy_right' style="color: #d9d9d9"><p>&copy;headphones 2020</p></div>
+            <div class="foot_logo">
+                <i><img src='./images/36.png' alt='facebook logo'></i>
+                <i><img src="./images/twitter.png" alt="twitter logo"></i>
+                <i><img src="./images/instagram.png" alt="instagram logo"></i>
             </div>
         </section>
     </footer>
