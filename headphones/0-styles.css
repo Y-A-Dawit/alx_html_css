@@ -1,0 +1,8 @@
+* {
+    margin:0; /* take the white sides off to use all the viewport width and height */
+    padding:0;
+    border:0;
+    box-sizing:border-box;
+    overflow-x:hidden;
+    scroll-behavior: unset;
+}
