@@ -17,32 +17,109 @@
     height:auto;
 }
 
+.background first_section {
+    position: relative; /* element positioned relative to its normal position initially in the document */
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+.head_head>nav {
+    padding: 25px 40px;
+    height: auto;
+    width: 100vw;
+}
+
+nav {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+#head_logo {
+    margin-left: 50px;
+}
+
+.clickable ul {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    gap:15px;
+    margin-right: 50px;
+    margin-top:20px;
+}
+
+.first_section {
+    padding-top: 260px;
+    padding-bottom: 120px;
+    padding-left: 260px;
+    padding-right: 260px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:center;
+    gap:60px;
+}
+
+.first_section_child {
+    display:flex;
+    flex-direction:column;
+    gap:45px;
+}
+
+.first_section>div {
+    align-items: center;
+}
+
+.first_section>div>button {
+    color:white;
+    font-weight:bolder;
+}
+
+.intro {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.about_us {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 95px;
+    gap:55px;
+    /* border:2px solid blue; */
+}
+
 .iconic>div {
     display:flex;
     flex-direction:row;
-    padding:130px;
+    padding:60px 100px;
     gap: 10px;
-    border:2px solid red;
+    /* border:2px solid red; */
 }
 
 .iconic_container>div {
     margin:10px auto;
-    border:2px solid blue;
-    width:2200px;
+    /* border:2px solid blue; */
+    width:100%;
+    max-width:1200px;
     height:250px;
     display:flex;
     flex-direction:row;
     align-items:center;
     justify-content:space-evenly;
+    flex-wrap:wrap;
     /* gap:20px; */
 }
 
 .iconic_container>div>div{
-    border:2px solid red;
+    /* border:2px solid red; */
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
     align-items:center;
+    flex-shrink:1;
     gap:12px;
     width:100%;
     height:auto;
@@ -50,10 +127,14 @@
 
 .iconic_symbols {
     display:flex;
-    border: 2px solid orange;
+    flex-shrink:1;
+    flex: 1 1 20%;
+    height:auto;
+    /* border: 2px solid orange; */
     flex-direction:column;
     justify-content:space-evenly;
     align-items:center;
+    width:auto;
     gap:8px;
 }
 .background2 {
