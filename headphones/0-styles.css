@@ -17,6 +17,45 @@
     height:auto;
 }
 
+.iconic>div {
+    display:flex;
+    flex-direction:row;
+    padding:130px;
+    gap: 10px;
+    border:2px solid red;
+}
+
+.iconic_container>div {
+    margin:10px auto;
+    border:2px solid blue;
+    width:2200px;
+    height:250px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+    /* gap:20px; */
+}
+
+.iconic_container>div>div{
+    border:2px solid red;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+    gap:12px;
+    width:100%;
+    height:auto;
+}
+
+.iconic_symbols {
+    display:flex;
+    border: 2px solid orange;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    gap:8px;
+}
 .background2 {
     background-image: url('./images/headphones_hero_2.jpg');
     background-repeat: no-repeat;
@@ -25,6 +64,104 @@
     background-attachment: scroll;
     width:auto;
     height:auto;
+}
+
+.background2>div {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    margin:auto;
+    padding:100px;
+    gap:90px;
+}
+
+.bg_pentagon {
+    width:100%;
+    max-width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px 0;
+    margin:0;
+    box-sizing:border-box;
+    /* border: 2px solid red; */
+}
+
+.bg_pentagon>div {
+    /* border:2px solid blue; */
+    gap:50px;
+    /* object-fit:contain; */
+    /* flex-shrink:1; */
+}
+
+.background2>div>.bg_pentagon>div>img {
+    height:auto;
+}
+
+.bg_pentagon_child {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:10px;
+    width:1500px;
+}
+
+.main_form>form {
+    padding:100px;
+    width:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:50px;
+}
+
+.main_form>form>div {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+
+}
+
+.data_form  {
+    width:100%;
+    max-width: 420px;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    gap:50px;
+}
+
+.data_form input  {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+
+input, textarea {
+    width:95%;
+    border: none;
+    border-bottom: 1px solid #b8b7b7;
+    padding:15px 0;
+    font-size:16px
+}
+
+input::placeholder {
+    color: black;
+    opacity: 1;
+    font-weight: bolder;
+}
+
+.main_form>form>button {
+    background-color: #FF6565;
+    border-radius:40px;
+    padding:15px 35px;
+    margin-top:20px;
 }
 
 .foot {
@@ -56,49 +193,4 @@
     flex-direction:row;
     justify-content: space-evenly;
     gap:20px;
-}
-
-.main_form>form {
-    padding:100px;
-    width:auto;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap:50px;
-}
-
-.main_form>form>div {
-    display:flex;
-    flex-direction:column;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 2px solid red;
-
-}
-
-.data_form  {
-    width:350px;
-    position: relative;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    gap:50px;
-}
-
-.data_form>input  {
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    transform: translate(-50%, 0);
-}
-
-input::after {
-    content: "";
-    position: absolute;
-    bottom: 5px;
-    left:5px;
-    height: 10px;
-    width:100%;
-    background-color: rgb(12, 11, 11);
 }
