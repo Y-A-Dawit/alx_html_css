@@ -7,6 +7,24 @@
     scroll-behavior: unset;
 }
 
+@font-face {
+    font-family: 'CustomFont1';
+    src: url(SourceSansPro-Bold.otf);
+}
+@font-face {
+    font-family: 'CustomFont2';
+    src: url(SourceSansPro-Regular.otf);
+}
+@font-face {
+    font-family: 'CustomFont3';
+    src: url(SourceSansPro-Semibold.otf);
+}
+
+.clickable {
+    font-family: "CustomFont1";
+    font-size: 12px;
+}
+
 .bgg {
     background-image: url('./images/headphones_hero_1.jpg');
     background-repeat: no-repeat;
@@ -57,28 +75,30 @@ div.navbar {
 
 .navigh>div>section {
     display:flex;
-    border:2px solid red;
+    /* border:2px solid red; */
     flex-direction:column;
-    margin-bottom:150px;
+    margin-bottom:105px;
     width:80%;
-    height:auto;
+    /* height:auto; */
     align-self:center;
+    gap:60px
 }
 
 .navigh>div>section>div {
     display:flex;
     flex-direction:column;
-    border:2px solid red;
+    /* border:2px solid red; */
     margin-bottom:50px;
     justify-content: space-between;
-    padding:0
+    /* padding:0 */
 }
 
 .first_section_child {
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap:35px;
+    gap:55px;
+    transform: translate(0, 23%)
 }
 
 button {
@@ -147,6 +167,27 @@ button {
     align-items:center;
     width:auto;
     gap:8px;
+}
+
+.pentagon_image {
+    display:block; 
+    width:250px; 
+    height:auto; 
+    max-width:100%;
+}
+
+form>div>h2 {
+    font-weight: 800;
+}
+
+#call_action {
+    color:white;
+    font-weight:bolder;
+}
+
+.foot>section>div>img {
+    width:180px; 
+    height:auto;
 }
 .background2 {
     background-image: url('./images/headphones_hero_2.jpg');
@@ -273,7 +314,8 @@ input::placeholder {
 
 .copy_right {
     align-self:center;
-    transform: translate(-20%, 305%)
+    transform: translate(-20%, 305%);
+    color: #d9d9d9
 }
 
 .foot>section>div {

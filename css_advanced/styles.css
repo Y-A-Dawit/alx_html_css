@@ -48,7 +48,7 @@
 
 header, .navig { /* need to use both "header" element selector and ".navig" class selector to span the full width of the viewport, otherwise*/
     display: flex;
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
     align-items:start;
     justify-content:space-between;
@@ -99,7 +99,7 @@ header, .navig { /* need to use both "header" element selector and ".navig" clas
 
 }
 
-#first-section  {
+#first-section background {
     position: relative; /* element positioned relative to its normal position initially in the document */
     height: 100vh;
     width: 100vw;
